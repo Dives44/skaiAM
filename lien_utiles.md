@@ -1,11 +1,11 @@
 # Liens utiles
 ## Tutoriels
-###Git
+### Git
 * Prendre en main: https://openclassrooms.com/fr/courses/1233741-gerez-vos-codes-source-avec-git
 * GitHub: https://guides.github.com/activities/hello-world/
 * 
 
-###Pycharm
+### Pycharm
 * Les bases: https://informatique.centrale-marseille.fr/tutos/post/utilisation-pycharm-bases.html
 > **Attention**: il faut installer les modules en ligne de commandes et pas avec l'outils Pycharm
 
