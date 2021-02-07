@@ -17,4 +17,5 @@ des autres dans une branche spécifique avant de l'inclure dans le projet princi
  nouvelles fonctionnalités dois se faire dans une branche autres que la master en local. 
 2. Chaque branche pourra être pull avec un avis favorable de tous les membres du groupe concerné par la branche
 3. Une branche ne pourra être merge avec la branche master qu'après l'avis favorable de tous les membres
-4. Il est préférable d'éffectuer le plus souvent possible des rebase pour d'une par éviter d'avoir un log rempli de fusion 
+4. Il est préférable d'éffectuer le plus souvent possible des rebase pour d'une par éviter d'avoir un log rempli de fusion
+et régler les conflits petits à petit 
