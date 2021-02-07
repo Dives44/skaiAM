@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+kill -9 $(ps -eF | grep QG | awk -F ' ' '{print $2}') > /dev/null 2>&1
+kill -9 $(ps -eF | grep ardu | awk -F ' ' '{print $2}') > /dev/null 2>&1
+kill -9 $(ps -eF | grep nav | awk -F ' ' '{print $2}') > /dev/null 2>&1
+kill -9 $(ps -eF | grep apm | awk -F ' ' '{print $2}') > /dev/null 2>&1
+
+##Launch SITL instance
+/Users/julien/opt/anaconda3/bin/dronekit-sitl copter --home=44.5013,-88.0622,0,180&
+sleep 5
+
+##Launch QGroundControl
+/Applications/qgroundcontrol.app/Contents/MacOS/./qgroundcontrol --logging:full 2>/dev/null&
+sleep 5
+
+##Start MAVProxy
+screen -dm mavproxy.py --master=tcp:127.0.0.1:4760 --out=127.0.0.1:14550 --out=127.0.0.1:5762
+
+##Launch the dronekit-python script
+/Users/julien/opt/anaconda3/bin/python "$1" --connect 127.0.0.1:5762
+
+##>> launchSitl basic_template.py
+
+function finish {
+    kill -9 $(ps -eF | grep QG | awk -F' ' '{print $2}') > /dev/null 2>&1
+    kill -9 $(ps -eF | grep ardu | awk -F' ' '{print $2}') > /dev/null 2>&1
+    kill -9 $(ps -eF | grep mav | awk -F' ' '{print $2}') > /dev/null 2>&1
+    kill -9 $(ps -eF | grep apm | awk -F ' ' '{print $2}') > /dev/null 2>&1
+}
+
+trap finish EXIT

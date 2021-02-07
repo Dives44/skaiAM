@@ -10,8 +10,8 @@ La migration est toujours en cours..
 * Installer Git
 * Initialiser le repo Git:
  >
-    cd chemin/voulu/vers/le/repo/git
-    git clone https://github.com/Dives44/skaiAM.git
+    $ cd chemin/voulu/vers/le/repo/git
+    $ git clone https://github.com/Dives44/skaiAM.git
 * Il est recommandé d'installer aussi GitHub Desktop pour se simplifier encore plus la vie
 https://desktop.github.com
     
@@ -21,7 +21,10 @@ https://desktop.github.com
 * Double cliquer sur le package et faire un "easy install"
 * Verifier que MacPorts est bien installé avec `$ port version` qui doit retourner `$ Version: x.x.x`
 
-
+### Ardupilot
+> Installer Ardupilot dans un répertoire autre que le repository Git
+>
+    $ git clone -b Copter-3.5.5 https://github.com/ardupilot/ardupilot
 
 ### QGroundControl
 > C'est la station de controle
@@ -49,7 +52,14 @@ les lignes du terminal doivent commencer par (skaiAM)
     $ sudo pip install matplotlib==2.2.5
     $ sudo pip install opencv-python==4.2.0.32
     $ sudo pip install parsing==1.6.1
-    $ sudo port install py27-serial
-    $ sudo port install py27-wxpython-3.0
+    $ sudo pip install pyserial==3.5
+    $ sudo pip install pyparsing==2.4.7
+    $ sudo pip install -U wxPython
+    $ sudo pip install MAVProxy==1.6.2
+    $ sudo pip install pyreadline==2.1
+    $ sudo pip uninstall python-dateutil
+    $ sudo pip install pillow
     $ sudo port install py27-pil
     $ sudo port install sqlite3-tcl
+    $ sudo -H pip install dronekit==2.9.1
+    $ sudo -H pip install dronekit-sitl==3.2.0

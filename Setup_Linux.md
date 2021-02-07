@@ -14,16 +14,32 @@ Pour connaitre la version de python il faut executer `$ python --version`
 * Installer Git
 * Initialiser le repo Git:
  >
-    cd chemin/voulu/vers/le/repo/git
-    git clone https://github.com/Dives44/skaiAM.git
+    $ cd chemin/voulu/vers/le/repo/git
+    $ git clone https://github.com/Dives44/skaiAM.git
 * Il est recommandé d'installer aussi GitHub Desktop pour se simplifier encore plus la vie
 https://desktop.github.com
 
-
+### Ardupilot
+> Installer Ardupilot dans un répertoire autre que le repository Git
+>
+    $ git clone -b Copter-3.5.5 https://github.com/ardupilot/ardupilot
+    $ cd ardupilot/
+    $ git submodule update --init --recursive
+    $ cd Tools/autotest/
+    $ pwd (Copier le résultat de cette commande)
+    $ sudo vi ~/bashrc
+* Ajouter à la fin (en apuyant sur I pour insert)
+>
+    $ export PATH="resulat/de/la/commande/copiée/plius/haut":$PATH
+* Apuyer sur Echap puis taper wq et Entrer
+* Cela permet de ne pas avoir à retourner dans les fichier Ardupilot à chaque fois pour le lancer. Après ces
+lignes de commandes il sera possible de lancer depuis n'importe quel répertoire Ardupilot
+>
+    $ source ~/.bashrc
+    
 
 ### QGroundControl
 > C'est la station de controle
-* Entrer dans le terminal
 >
     $ sudo usermod -a -G dialout $USER
     $ sudo apt-get remove modemmanager -y
@@ -36,6 +52,20 @@ https://desktop.github.com
 * Lancer
 >
     $ ./QGroundControl.AppImage
+
+### MAVProxy
+> C'est la station de controle en ligne de commandes
+>
+    $ sudo apt-get install python-dev python-opencv python-wxgtk4.0 python-pip python-matplotlib python-lxml python-pygame
+    $ pip install PyYAML mavproxy --user
+    $ echo "export PATH=$PATH:$HOME/.local/bin" >> ~/.bashrc
+S'il y a une erreur "permission denied" il changer les droits de l'utilisateurs
+>
+    $ sudo usermod -a -G dialout <username>
+Mettre à jour
+>
+    $ pip install mavproxy --user --upgrade
+
 
 ### IDE Pycharm
 * Installer Pycharm: 
