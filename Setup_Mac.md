@@ -9,8 +9,11 @@ La migration est toujours en cours..
 * Créer un compte GitHub:
 * Installer Git
 * Initialiser le repo Git:
-    * cd chemin/voulu/vers/le/repo/git
-    * git clone https://github.com/Dives44/skaiAM.git
+ >
+    cd chemin/voulu/vers/le/repo/git
+    git clone https://github.com/Dives44/skaiAM.git
+* Il est recommandé d'installer aussi GitHub Desktop pour se simplifier encore plus la vie
+https://desktop.github.com
     
 ### MacPorts
 * Télécharger le code source adapté à votre version de MacOS ici https://github.com/macports/macports-base/releases/
