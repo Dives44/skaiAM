@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dbb60ef1-4919-4012-99ee-618469e0e39e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Commandes/step_by_step.md" beforeDir="false" afterPath="$PROJECT_DIR$/Commandes/step_by_step.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Setup_Linux.md" beforeDir="false" afterPath="$PROJECT_DIR$/Setup_Linux.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Setup_Mac.md" beforeDir="false" afterPath="$PROJECT_DIR$/Setup_Mac.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Setup_Windows.md" beforeDir="false" afterPath="$PROJECT_DIR$/Setup_Windows.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -129,17 +125,6 @@
             </path>
             <path>
               <item name="skaiAM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="skaiAM" type="462c0819:PsiDirectoryNode" />
-              <item name="Commandes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="skaiAM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="skaiAM" type="462c0819:PsiDirectoryNode" />
-              <item name="Commandes" type="462c0819:PsiDirectoryNode" />
-              <item name="example_dronekit" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="skaiAM" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -190,7 +175,21 @@
       <option name="project" value="LOCAL" />
       <updated>1612681550256</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Correction de certaines fautes">
+      <created>1612684018398</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1612684018398</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Correction de certaines fautes">
+      <created>1612684234034</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1612684234034</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -245,7 +244,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Creation des documents Setup_Linux.md, Setup_Mac.md, Setup_Window.md et Utilisation_Git.md" />
     <MESSAGE value="Mise à jour des documents Setup_Linux.md, Setup_Mac.md, Setup_Window.md et Utilisation_Git.md. Création des documents liens_utiles.md et step_by_step.fd ainsi que des répertoires Reconnaissance vocale, Vision par ordinateur et Commandes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Mise à jour des documents Setup_Linux.md, Setup_Mac.md, Setup_Window.md et Utilisation_Git.md. Création des documents liens_utiles.md et step_by_step.fd ainsi que des répertoires Reconnaissance vocale, Vision par ordinateur et Commandes." />
+    <MESSAGE value="Correction de certaines fautes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correction de certaines fautes" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Utilisation_Git.md">
