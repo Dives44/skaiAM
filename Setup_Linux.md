@@ -1,8 +1,20 @@
-# Setup Mac
-## 1. Installer l'environnement
+# Setup Linux
+## 1. Remarques
+* Dronekit a été construit sous python2. Ainsi, certains modules ainsi que certaines fonction
+permettant d'automatiser les script python avec les commandes bash ne marchent pas sous python3.
+La migration est toujours en cours..
+* Il est donc nécéssaire d'utiliser python2.7 pour avoir un environnement entièrement fonctionnel
+## 2. Installer l'environnement
+> A partir d'Ubuntu 20.04 python3 est la version par défaut. Il faut donc bien faire attention à
+installer un environnement virtuel avec python2.7
+
+Pour connaitre la version de python il faut executer `$ python --version` 
 ### Repo Git
 * Créer un compte GitHub:
 * Installer Git
+* Initialiser le repo Git:
+    * cd chemin/voulu/vers/le/repo/git
+    * git clone https://github.com/Dives44/skaiAM.git
 
 ### IDE Pycharm
 * Installer Pycharm: `$ sudo snap install pycharm-community --classic`
@@ -14,7 +26,7 @@ les lignes du terminal doivent commencer par (skaiAM)
 
 ### Xcode
 
-## 2.Installer les packages
+## 3.Installer les packages
 * `$ sudo pip install numpy==1.16.6`
 * `$ sudo pip install PyYAML==5.4.1`
 * `$ sudo pip install lxml==4.6.2`
